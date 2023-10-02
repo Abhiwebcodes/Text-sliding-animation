@@ -1,0 +1,54 @@
+ *,html body{
+    margin: 0;
+    background-color: aqua;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.scroll{
+    white-space: nowrap;
+    margin: 0 2em;
+    
+}
+.scroll div{
+    display: flex;
+    gap: 2em;
+    margin-top: 70px;
+}
+.scroll p{
+   font-size: 46px;
+   color: black;
+   font-weight: 700;
+   margin-bottom: 0;
+   line-height: 10px;
+
+}
+.RightToLeft{
+    animation: RightToLeft 10s infinite linear;
+}
+@keyframes RightToLeft {
+    from{
+        transform: translateX(0%);
+
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+.LeftToRight{
+    animation: LeftToRight 10s infinite linear;
+}
+@keyframes LeftToRight {
+    from{
+        transform: translateX(-50%);
+
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
